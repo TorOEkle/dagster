@@ -9,7 +9,8 @@ from dagster import (
 import pandas as pd
 
 
-@asset(kinds={"oracle"})
+@asset(kinds={"oracle"}, 
+       owners=["Zara@cap.com", "team:data-eng"])
 def source_bar():
     df = pd.DataFrame({
         "column_bar": [1, 2, 3],
@@ -33,7 +34,8 @@ def source_bar():
     )
 
 @asset
-def source_baz(kinds={"excel"}):
+def source_baz(kinds={"excel"},
+                owners=["Zara@cap.com", "team:data-eng"]):
     df = pd.DataFrame({
         "column_baz": [4, 5, 6],
         "other_column_baz": ["D", "E", "F"]
