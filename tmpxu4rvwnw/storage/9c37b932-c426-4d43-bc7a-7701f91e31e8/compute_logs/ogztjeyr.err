@@ -1,0 +1,7 @@
+[32m2024-12-04 20:44:41 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 9c37b932-c426-4d43-bc7a-7701f91e31e8 - 17790 - LOGS_CAPTURED - Started capturing logs in process (pid: 17790).
+[32m2024-12-04 20:44:41 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 9c37b932-c426-4d43-bc7a-7701f91e31e8 - 17790 - asset_one - STEP_START - Started execution of step "asset_one".
+[32m2024-12-04 20:44:41 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 9c37b932-c426-4d43-bc7a-7701f91e31e8 - 17790 - asset_one - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2024-12-04 20:44:41 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 9c37b932-c426-4d43-bc7a-7701f91e31e8 - asset_one - Writing file at: /Users/ekltn/Documents/testing/tutorial/tmpxu4rvwnw/storage/asset_one using PickledObjectFilesystemIOManager...
+[32m2024-12-04 20:44:41 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 9c37b932-c426-4d43-bc7a-7701f91e31e8 - 17790 - asset_one - ASSET_MATERIALIZATION - Materialized value asset_one.
+[32m2024-12-04 20:44:41 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 9c37b932-c426-4d43-bc7a-7701f91e31e8 - 17790 - asset_one - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2024-12-04 20:44:41 +0100[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 9c37b932-c426-4d43-bc7a-7701f91e31e8 - 17790 - asset_one - STEP_SUCCESS - Finished execution of step "asset_one" in 46ms.
