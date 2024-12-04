@@ -33,9 +33,9 @@ def source_bar():
         }
     )
 
-@asset
-def source_baz(kinds={"excel"},
-                owners=["Zara@cap.com", "team:data-eng"]):
+@asset(kinds={"excel"},
+                owners=["Zara@cap.com", "team:data-eng"])
+def source_baz():
     df = pd.DataFrame({
         "column_baz": [4, 5, 6],
         "other_column_baz": ["D", "E", "F"]
