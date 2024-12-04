@@ -1,8 +1,8 @@
 from dagster import asset, AssetIn, AssetOut, Output
 
 
-@asset()
-def asset_one(kinds={"python", "graphql"}):
+@asset(kinds={"python", "graphql"})
+def asset_one():
     return 1
 
 @asset(ins={"asset_one": AssetIn()})
