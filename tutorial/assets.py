@@ -5,7 +5,8 @@ from dagster import asset, AssetIn, AssetOut, Output
 def asset_one():
     return 1
 
-@asset(ins={"asset_one": AssetIn()})
+@asset(ins={"asset_one": AssetIn()},
+       kinds={"duckdb"})
 def asset_two(asset_one):
     return asset_one + 1
 
